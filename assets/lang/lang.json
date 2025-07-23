@@ -1,0 +1,43 @@
+﻿{
+  "tr": {
+    "hero_title": "Koltuk Yıkama ve Temizlik Çözümleri",
+    "hero_subtitle": "İstanbul'un tüm ilçelerine ücretsiz teslimat hizmeti.",
+    "button_info": "Bilgi Al",
+    "why_us_title": "İstanbul'un en iyi temizlik hizmeti veren firmasıyız.",
+    "why_us_reason1": "% 100 Memnuniyet garantisi",
+    "why_us_reason2": "Servis zamanını siz seçin",
+    "why_us_reason3": "Nazik ve eğitimli personeller",
+    "why_us_reason4": "3 Günde teslim hizmeti",
+    "about_call": "Ofis Telefonumuz",
+    "about_mobile": "Mobil İletişim",
+    "services_title": "Profesyonel Hizmetlerimiz",
+    "services_subtitle": "TEMİZLİK HİZMETLERİMİZ",
+    "testimonials_title": "Müşterimiz Hakkımızda Ne Söylüyor",
+    "testimonials_subtitle": "REFERANSLARIMIZ",
+    "counter_quality": "kaliteli hizmet",
+    "counter_experience": "yıllık deneyim",
+    "counter_satisfaction": "Müşteri Memnuniyeti",
+    "counter_smile": "Güler Yüz"
+  },
+  "en": {
+    "anasayfa" : "Home Page",
+    "hero_title": "Sofa Cleaning and Hygiene Solutions",
+    "hero_subtitle": "Free delivery service in all Istanbul districts.",
+    "button_info": "Get Info",
+    "why_us_title": "We are Istanbul’s top professional cleaning service provider.",
+    "why_us_reason1": "100% Satisfaction Guarantee",
+    "why_us_reason2": "Choose your service time",
+    "why_us_reason3": "Polite and trained staff",
+    "why_us_reason4": "3-day delivery service",
+    "about_call": "Our Office Phone",
+    "about_mobile": "Mobile Contact",
+    "services_title": "Our Professional Services",
+    "services_subtitle": "OUR CLEANING SERVICES",
+    "testimonials_title": "What Our Customers Say About Us",
+    "testimonials_subtitle": "TESTIMONIALS",
+    "counter_quality": "quality service",
+    "counter_experience": "years of experience",
+    "counter_satisfaction": "Customer Satisfaction",
+    "counter_smile": "Smiling Faces"
+  }
+}
