@@ -4383,8 +4383,8 @@ a.text-theme:hover,
 .breadcumb-wrapper {
   background-color: var(--secondary-color);
   background-size: cover;
-  padding-top: 165px;
-  padding-bottom: 165px;
+  padding-top: 450px;
+  padding-bottom: 450px;
 }
 
 /* Small devices */
@@ -9475,3 +9475,7 @@ blockquote.vs-quote .quote-author {
 }
 
 
+.main-menu.menu-style2 ul {
+  justify-content: flex-start !important;
+  text-align: left;
+}
