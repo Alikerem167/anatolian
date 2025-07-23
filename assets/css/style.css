@@ -6495,6 +6495,8 @@ blockquote.vs-quote .quote-author {
 }
 .service-style4 .service-img {
   position: relative;
+  
+  width: 100%;
   padding: 6px;
   z-index: 1;
 }
@@ -9479,3 +9481,7 @@ blockquote.vs-quote .quote-author {
   justify-content: flex-start !important;
   text-align: left;
 }
+
+
+
+
