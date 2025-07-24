@@ -4255,7 +4255,7 @@ a.text-theme:hover,
 }
 .copyright-text a {
   font-weight: 700;
-  color: var(--title-color);
+  color: var(--white-color);
   text-transform: capitalize;
 }
 .copyright-text a:hover {
@@ -4278,7 +4278,7 @@ a.text-theme:hover,
   font-weight: 500;
 }
 .copyright-menu a:hover {
-  color: var(--theme-color);
+  color: var(--white-color);
 }
 
 /* Large devices */
