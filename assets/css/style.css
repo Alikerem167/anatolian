@@ -3889,7 +3889,7 @@ a.text-theme:hover,
     color: var(--white-color);
   }
   .vs-header.header-layout1 .sticky-wrapper.style2 .header-inner .contact-content .contact-title a:hover {
-    color: var(--theme-color);
+    color: #00AEEF;
   }
 }
 @media (max-width: 1600px) {
