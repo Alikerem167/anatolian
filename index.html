@@ -172,6 +172,15 @@
                             <div class="col-auto d-lg-block d-none">
                                 <div class="header-inner">
                                     <div class="header-icons">
+                                            <div class="language-selector">
+  <div id="langBtn">🇹🇷 Türkçe</div>
+  <div id="langDropdown" class="lang-dropdown">
+    <div onclick="setLanguage('tr')">🇹🇷 Türkçe</div>
+    <div onclick="setLanguage('en')">🇺🇸 English</div>
+    <div onclick="setLanguage('es')">🇪🇸 Español</div>
+  </div>
+</div>
+<script src="lang.js"></script>
                                         <button class="searchBoxTggler"><i class="fal fa-search"></i></button>
                                         <a class="icon-btn" href="https://wa.me/05456033448"><img
                                                 src="assets/img/wp.png" alt="WhatsApp"
@@ -193,6 +202,8 @@
                 </div>
             </div>
         </div>
+    
+
     </header>
     <!--********************************
 			Start Main Content
@@ -259,7 +270,7 @@
                             <div class="icon-btn3"> <span class="icon"><img src="assets/img/icon/truck-icon.png"
                                         alt="service-icon"></span></div>
                             <h2 class="service-title"><a href="service.html">Hızlı Teslimat</a></h2>
-                            <p class="service-text">Üürnlerinizi 10 gün içinde size teslim ediyoruz</p>
+                            <p class="service-text">Ürünlerinizi 10 gün içinde size teslim ediyoruz</p>
                             <span class="shape-mockup" style="right: 0; top: 0;"><img
                                     src="assets/img/shapes/service-shape-4.png" alt="service element"></span>
                             
@@ -330,7 +341,7 @@
 
                             </div>
                             <div class="tab-img">
-                                <img src="assets/img/about/about-tab-2.jpg" alt="hakkımızda-image">
+                                <img src="assets/img/about/hakkimizda1.png" alt="hakkımızda-image">
                             </div>
                         </div>
                         <div class="contact-box">
@@ -844,7 +855,7 @@
                                 </div>
                                 <div class="media-counter">
                                     <div class="media-count">
-                                        <h2 class="media-title h3 counter-number" data-count="12">00</h2>
+                                        <h2 class="media-title h3 counter-number" data-count="13">00</h2>
                                         <span class="count-icon">+</span>
                                     </div>
                                     <p class="media-text">yıllık deneyim</p>
@@ -1096,6 +1107,80 @@
             });
         });
     </script>
+
+
+
+<script>
+let translations = {};
+let currentLang = localStorage.getItem("lang") || "tr";
+
+function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem("lang", lang);
+  applyTranslations();
+
+  const labelMap = {
+    tr: "TR Türkçe",
+    en: "EN English",
+    es: "ES Español"
+  };
+  const langBtn = document.getElementById("langBtn");
+  if (langBtn) langBtn.textContent = labelMap[lang];
+
+  // menüyü kapat
+  const dropdown = document.getElementById("langDropdown");
+  if (dropdown) dropdown.classList.remove("show");
+}
+
+function applyTranslations() {
+  if (!translations[currentLang]) return;
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[currentLang][key]) {
+      el.textContent = translations[currentLang][key];
+    }
+  });
+}
+
+function initLanguage() {
+  fetch("lang.json")
+    .then(res => res.json())
+    .then(data => {
+      translations = data;
+      applyTranslations();
+
+      const labelMap = {
+        tr: "TR Türkçe",
+        en: "EN English",
+        es: "ES Español"
+      };
+      const langBtn = document.getElementById("langBtn");
+      if (langBtn) langBtn.textContent = labelMap[currentLang];
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initLanguage();
+
+  const btn = document.getElementById("langBtn");
+  const dropdown = document.getElementById("langDropdown");
+
+  if (btn && dropdown) {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation(); // tıklama dışarı taşmasın
+      dropdown.classList.toggle("show");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+  }
+});
+</script>
+
+
 
 </body>
 

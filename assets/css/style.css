@@ -9485,3 +9485,76 @@ blockquote.vs-quote .quote-author {
 
 
 
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+#langBtn {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 6px 10px;
+  font-weight: bold;
+  user-select: none;
+}
+.arrow {
+  display: inline-block;
+  transform: rotate(90deg); /* Aşağıya bakan hali */
+  transition: transform 0.3s ease;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Menü açıldığında oku sağa döndür */
+#langBtn.open .arrow {
+  transform: rotate(0deg); /* Sağa bakan */
+}
+
+#langBtn:hover {
+  opacity: 0.85;
+}
+
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lang-dropdown.show {
+  display: block !important;
+}
+
+
+.lang-dropdown div {
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #222;
+  white-space: nowrap;
+  border-bottom: 1px solid #eee;
+}
+
+.lang-dropdown div:last-child {
+  border-bottom: none;
+}
+
+.lang-dropdown div:hover {
+  background-color: #f5f5f5;
+}
+
+
+@media (max-width: 768px) {
+  .lang-dropdown div {
+    padding: 12px 14px;
+    font-size: 16px;
+  }
+}
