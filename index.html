@@ -155,11 +155,11 @@
                                             <a data-i18n="home" href="index.html">Anasayfa</a>
                                         </li>
                                         <li>
-                                            <a href="hakkimizda.html">Hakkımızda</a>
+                                            <a data-i18n="about" href="hakkimizda.html">Hakkımızda</a>
                                         </li>
                                         
                                         <li>
-                                            <a href="iletisim.html">İletişim</a>
+                                            <a data-i18n="contact" href="iletisim.html">İletişim</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -178,6 +178,9 @@
     <div onclick="setLanguage('tr')">🇹🇷 Türkçe</div>
     <div onclick="setLanguage('en')">🇺🇸 English</div>
     <div onclick="setLanguage('es')">🇪🇸 Español</div>
+    <div onclick="setLanguage('ru')">🇷🇺 Русский</div>
+    <div onclick="setLanguage('ar')">🇸🇦 عربي</div>
+    <div onclick="setLanguage('de')">🇩🇪 Deutsch</div>
   </div>
 </div>
 
@@ -215,7 +218,7 @@
                 <div class="row justify-content-start align-items-center">
                     <div class="col-lg-7 position-relative">
                         <div class="vs-hero__content">
-                            <div class="vs-hero__subtitle wow animate__fadeInUp" data-wow-delay="0.60s"><span
+                            <div class="vs-hero__subtitle wow animate__fadeInUp" data-wow-delay="0.60s"><span data-i18n="memnuniyet"
                                     class="icon"></span>100% Memnuniyet </div>
                             <h1 class="vs-hero__title wow animate__fadeInUp" data-wow-delay="0.70s">Anatolia <span
                                     class="vs-hero__title--highlight">Kaliteli</span> Deniz Ürünleri</h1>
@@ -1122,7 +1125,10 @@ function setLanguage(lang) {
   const labelMap = {
     tr: "TR Türkçe",
     en: "EN English",
-    es: "ES Español"
+    es: "ES Español",
+    ru: "🇷🇺 Русский",
+    ar: "🇸🇦 عربي",
+    de: "🇩🇪 Deutsch"
   };
   const langBtn = document.getElementById("langBtn");
   if (langBtn) langBtn.textContent = labelMap[lang];
@@ -1152,7 +1158,10 @@ function initLanguage() {
       const labelMap = {
         tr: "TR Türkçe",
         en: "EN English",
-        es: "ES Español"
+        es: "ES Español",
+        ru: "🇷🇺 Русский",
+        ar:"🇸🇦 عربي",
+        de: "🇩🇪 Deutsch"
       };
       const langBtn = document.getElementById("langBtn");
       if (langBtn) langBtn.textContent = labelMap[currentLang];

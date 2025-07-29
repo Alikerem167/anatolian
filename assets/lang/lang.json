@@ -1,11 +1,23 @@
 ﻿{
   "tr": {
     "onyukleyici_iptal": "Önyükleyiciyi iptal et",
-    "home":"Anasayfa"
+    "home":"Anasayfa",
+    "about":"Hakkımızda",
+    "contact":"İletişim",
+    "bizim":"Bizim",
+    "hakkimizda":"Hakkımızda"
+    
+    
   },
   "en": {
   "onyukleyici_iptal":"Cancel Preloader",
-  "home":"Home"
+  "home":"Home",
+  "about":"About",
+  "contact":"Contact",
+   "bizim":"About",
+   "hakkimizda":"Us"
+  
+
 
   
   }

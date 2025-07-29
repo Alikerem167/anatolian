@@ -152,14 +152,14 @@
                                 <nav class="main-menu menu-style2 d-none d-lg-block">
                                     <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="index.html">Anasayfa</a>
+                                            <a data-i18n="home" href="index.html">Anasayfa</a>
                                         </li>
                                         <li>
-                                            <a href="hakkimizda.html">Hakkımızda</a>
+                                            <a data-i18n="about" href="hakkimizda.html">Hakkımızda</a>
                                         </li>
                                         
                                         <li>
-                                            <a href="iletisim.html">İletişim</a>
+                                            <a data-i18n="contact" href="iletisim.html">İletişim</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -173,14 +173,16 @@
                                 <div class="header-inner">
                                     <div class="header-icons">
                                         <div class="language-selector">
-  <div id="langBtn">🇹🇷 Türkçe</div>
+ <div id="langBtn">🇹🇷 Türkçe</div>
   <div id="langDropdown" class="lang-dropdown">
     <div onclick="setLanguage('tr')">🇹🇷 Türkçe</div>
     <div onclick="setLanguage('en')">🇺🇸 English</div>
     <div onclick="setLanguage('es')">🇪🇸 Español</div>
+    <div onclick="setLanguage('ru')">🇷🇺 Русский</div>
+    <div onclick="setLanguage('ar')">🇸🇦 عربي</div>
+    <div onclick="setLanguage('de')">🇩🇪 Deutsch</div>
   </div>
 </div>
-<script src="lang.js"></script>
                                         
                                         <a class="icon-btn" href="https://wa.me/05456033448"><img
                                                 src="assets/img/wp.png" alt="WhatsApp"
@@ -213,12 +215,12 @@
     <div class="breadcumb-wrapper " data-bg-src="assets/img/bg/hero-bg-3.png">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Bizim <span>Hakkımızda</span></h1>
+                <h1 class="breadcumb-title"><a data-i18n="bizim">Bizim</a> <span data-i18n="hakkimizda">Hakkımızda</span></h1>
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Anasayfa</a></li>
-                    <li>hakkımızda</li>
+                    <li><a href="index.html" data-i18n="home">Anasayfa</a></li>
+                    <li data-i18n="about">hakkımızda</li>
                 </ul>
             </div>
         </div>
@@ -552,7 +554,7 @@ Bugün geldiğimiz noktada, hem yerli hem de uluslararası pazarlarda güvenilir
         
 
     </script>
-    <script>
+<script>
 let translations = {};
 let currentLang = localStorage.getItem("lang") || "tr";
 
@@ -564,7 +566,10 @@ function setLanguage(lang) {
   const labelMap = {
     tr: "TR Türkçe",
     en: "EN English",
-    es: "ES Español"
+    es: "ES Español",
+    ru: "🇷🇺 Русский",
+    ar: "🇸🇦 عربي",
+    de: "🇩🇪 Deutsch"
   };
   const langBtn = document.getElementById("langBtn");
   if (langBtn) langBtn.textContent = labelMap[lang];
@@ -585,17 +590,13 @@ function applyTranslations() {
 }
 
 function initLanguage() {
-  fetch("lang.json")
+  fetch("./assets/lang/lang.json")
     .then(res => res.json())
     .then(data => {
       translations = data;
       applyTranslations();
 
-      const labelMap = {
-        tr: "TR Türkçe",
-        en: "EN English",
-        es: "ES Español"
-      };
+     
       const langBtn = document.getElementById("langBtn");
       if (langBtn) langBtn.textContent = labelMap[currentLang];
     });
@@ -620,8 +621,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
-  </script>  
+</script> 
 
 </body>
 
