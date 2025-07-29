@@ -64,7 +64,7 @@
 	Preloader
 	==============================-->
     <div class="preloader">
-        <button class="vs-btn preloaderCls">Önyükleyiciyi İptal Et </button>
+        <button class="vs-btn preloaderCls"data-i18n="onyukleyici_iptal">Önyükleyiciyi İptal Et </button>
         <div class="preloader-inner">
             <img src="assets/img/logo-white.png" style="width: 250px;" alt="logo">
             <span class="loader"></span>
@@ -152,7 +152,7 @@
                                 <nav class="main-menu menu-style2 d-none d-lg-block">
                                     <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="index.html">Anasayfa</a>
+                                            <a data-i18n="home" href="index.html">Anasayfa</a>
                                         </li>
                                         <li>
                                             <a href="hakkimizda.html">Hakkımızda</a>
@@ -180,8 +180,8 @@
     <div onclick="setLanguage('es')">🇪🇸 Español</div>
   </div>
 </div>
-<script src="lang.js"></script>
-                                        <button class="searchBoxTggler"><i class="fal fa-search"></i></button>
+
+                                       
                                         <a class="icon-btn" href="https://wa.me/05456033448"><img
                                                 src="assets/img/wp.png" alt="WhatsApp"
                                                 style="width: 33px; height: 33px; margin-bottom: 16%; ">
@@ -1143,7 +1143,7 @@ function applyTranslations() {
 }
 
 function initLanguage() {
-  fetch("lang.json")
+  fetch("./assets/lang/lang.json")
     .then(res => res.json())
     .then(data => {
       translations = data;

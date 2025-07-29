@@ -88,83 +88,7 @@
                     <li>
                         <a href="hakkimizda.html">Hakkımızda</a>
                     </li>
-                    <li class="menu-item-has-children mega-menu-wrap">
-                        
-
-                        <ul class="mega-menu">
-                            <li><a href="#">Zekeriyakoy</a></li>
-                            <li><a href="#">Beşiktaş</a></li>
-                            <li><a href="#">Şişli</a></li>
-                            <li><a href="#">Sarıyer</a></li>
-                            <li><a href="#">Esenyurt</a></li>
-                            <li><a href="#">Halkalı</a></li>
-                            <li><a href="#">Taksim</a></li>
-                            <li><a href="#">Altınşehir</a></li>
-                            <li><a href="#">İstinye</a></li>
-                            <li><a href="#">Kilyos</a></li>
-                            <li><a href="#">Büyükçavuşlu</a></li>
-                            <li><a href="#">Kavaklı</a></li>
-                            <li><a href="#">Beykent</a></li>
-                            <li><a href="#">Güngören</a></li>
-                            <li><a href="#">Kamiloba</a></li>
-                            <li><a href="#">Ulus</a></li>
-                            <li><a href="#">Kuştepe</a></li>
-                            <li><a href="#">Göktürk</a></li>
-                            <li><a href="#">Kağıthane</a></li>
-                            <li><a href="#">Eyüp</a></li>
-                            <li><a href="#">Bayrampaşa</a></li>
-                            <li><a href="#">Bahçeşehir</a></li>
-                            <li><a href="#">Florya</a></li>
-                            <li><a href="#">Yeşilpınar</a></li>
-                            <li><a href="#">Beyoğlu</a></li>
-                            <li><a href="#">Atakent</a></li>
-                            <li><a href="#">Dikilitaş</a></li>
-                            <li><a href="#">Çanta</a></li>
-                            <li><a href="#">Silivri Ortaköy</a></li>
-                            <li><a href="#">Arnavutköy</a></li>
-                            <li><a href="#">Merter</a></li>
-                            <li><a href="#">Kumburgaz</a></li>
-                            <li><a href="#">Maslak</a></li>
-                            <li><a href="#">Kanarya</a></li>
-                            <li><a href="#">Esenler</a></li>
-                            <li><a href="#">Bağcılar</a></li>
-                            <li><a href="#">Bahçelievler</a></li>
-                            <li><a href="#">Avcılar</a></li>
-                            <li><a href="#">Ispartakule</a></li>
-                            <li><a href="#">Yeşilköy</a></li>
-                            <li><a href="#">Balat</a></li>
-                            <li><a href="#">Çapa</a></li>
-                            <li><a href="#">Şirinevler</a></li>
-                            <li><a href="#">Çobançeşme</a></li>
-                            <li><a href="#">Değirmenköy</a></li>
-                            <li><a href="#">Selimpaşa</a></li>
-                            <li><a href="#">Tarabya</a></li>
-                            <li><a href="#">Tekirdağ</a></li>
-                            <li><a href="#">Hadımköy</a></li>
-                            <li><a href="#">Esenkent</a></li>
-                            <li><a href="#">Yakuplu</a></li>
-                            <li><a href="#">Fatih</a></li>
-                            <li><a href="#">Zeytinburnu</a></li>
-                            <li><a href="#">Bakırköy</a></li>
-                            <li><a href="#">Beylikdüzü</a></li>
-                            <li><a href="#">Başakşehir</a></li>
-                            <li><a href="#">Ataköy</a></li>
-                            <li><a href="#">Yeşilyurt</a></li>
-                            <li><a href="#">Çağlayan</a></li>
-                            <li><a href="#">Yenibosna</a></li>
-                            <li><a href="#">Silivri</a></li>
-                            <li><a href="#">Gümüşyaka</a></li>
-                            <li><a href="#">Çorlu</a></li>
-                            <li><a href="#">Bağcılar</a></li>
-                            <li><a href="#">Çerkezköy</a></li>
-                            <li><a href="#">Etiler</a></li>
-                            <li><a href="#">Küçükçekmece</a></li>
-                            <li><a href="#">Uskumruköy</a></li>
-                            <li><a href="#">Kemerburgaz</a></li>
-                            <li><a href="#">Alibeyköy</a></li>
-                            <li><a href="#">İkitelli</a></li>
-                        </ul>
-                    </li>
+                    
                     <li>
                         <a href="iletisim.html">İletişim</a>
                     </li>
@@ -248,7 +172,16 @@
                             <div class="col-auto d-lg-block d-none">
                                 <div class="header-inner">
                                     <div class="header-icons">
-                                        <button class="searchBoxTggler"><i class="fal fa-search"></i></button>
+                                        <div class="language-selector">
+  <div id="langBtn">🇹🇷 Türkçe</div>
+  <div id="langDropdown" class="lang-dropdown">
+    <div onclick="setLanguage('tr')">🇹🇷 Türkçe</div>
+    <div onclick="setLanguage('en')">🇺🇸 English</div>
+    <div onclick="setLanguage('es')">🇪🇸 Español</div>
+  </div>
+</div>
+<script src="lang.js"></script>
+                                        
                                         <a class="icon-btn" href="https://wa.me/05456033448"><img
                                                 src="assets/img/wp.png" alt="WhatsApp"
                                                 style="width: 33px; height: 33px; margin-bottom: 16%; ">
@@ -616,7 +549,79 @@ Bugün geldiğimiz noktada, hem yerli hem de uluslararası pazarlarda güvenilir
             video.currentTime = 0;
         });
 
+        
+
     </script>
+    <script>
+let translations = {};
+let currentLang = localStorage.getItem("lang") || "tr";
+
+function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem("lang", lang);
+  applyTranslations();
+
+  const labelMap = {
+    tr: "TR Türkçe",
+    en: "EN English",
+    es: "ES Español"
+  };
+  const langBtn = document.getElementById("langBtn");
+  if (langBtn) langBtn.textContent = labelMap[lang];
+
+  // menüyü kapat
+  const dropdown = document.getElementById("langDropdown");
+  if (dropdown) dropdown.classList.remove("show");
+}
+
+function applyTranslations() {
+  if (!translations[currentLang]) return;
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[currentLang][key]) {
+      el.textContent = translations[currentLang][key];
+    }
+  });
+}
+
+function initLanguage() {
+  fetch("lang.json")
+    .then(res => res.json())
+    .then(data => {
+      translations = data;
+      applyTranslations();
+
+      const labelMap = {
+        tr: "TR Türkçe",
+        en: "EN English",
+        es: "ES Español"
+      };
+      const langBtn = document.getElementById("langBtn");
+      if (langBtn) langBtn.textContent = labelMap[currentLang];
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initLanguage();
+
+  const btn = document.getElementById("langBtn");
+  const dropdown = document.getElementById("langDropdown");
+
+  if (btn && dropdown) {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation(); // tıklama dışarı taşmasın
+      dropdown.classList.toggle("show");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+  }
+});
+
+  </script>  
 
 </body>
 
