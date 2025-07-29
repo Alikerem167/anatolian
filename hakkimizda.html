@@ -596,6 +596,15 @@ function initLanguage() {
       translations = data;
       applyTranslations();
 
+      
+  const labelMap = {
+    tr: "TR Türkçe",
+    en: "EN English",
+    es: "ES Español",
+    ru: "🇷🇺 Русский",
+    ar: "🇸🇦 عربي",
+    de: "🇩🇪 Deutsch"
+}
      
       const langBtn = document.getElementById("langBtn");
       if (langBtn) langBtn.textContent = labelMap[currentLang];
