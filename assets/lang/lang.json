@@ -28,9 +28,48 @@
     "bizisecmeniz4":"İsteğe özel ambalajlama seçenekleri sunuyoruz.",
     "bizisecmeniz5":"Uygun fiyatlarla ve düzenli teslimat garantisiyle hizmet veriyoruz.",
     "ofistelefon":"Ofis Telefonumuz",
-    "mobililetisim":"Mobil İletişim"
-    
-    
+    "mobililetisim":"Mobil İletişim",
+    "nedenbiz":"NEDEN BİZ",
+    "prosedürlerimiz":"Prosedürlerimiz",
+    "prosedürlerimiz2":"Kalite Prosedürlerimiz",
+    "ürünsaklama":"Ürün Saklama ve Sevkiyat",
+    "ürünsaklama1":"Ürünlerimiz -18°C veya +0°C’de dondurulmuş ya da soğutulmuş şekilde hazırlanır, 10 gün içinde teslim edilir ve ihracat evrakları ile sağlık sertifikalarıyla birlikte gönderilir",
+    "kalitestandartlari":"Kalite Standartları",
+    "kalitestandartlari1":"Ürünlerimiz, AB onaylı modern tesislerde işlenir, +0°C / -18°C soğuk zincirle sevk edilir, laboratuvar testlerinden geçer ve veteriner sağlık sertifikalarıyla birlikte gönderilir.",
+    "ihracatkalite":"İhracat Kalitesi",
+    "ihracatkalite1":"Hijyenik ve modern tesislerde AB standartlarına uygun alabalık ve somon üretiyor, sertifikalı, sürdürülebilir ve ihracata hazır şekilde hizmet veriyoruz.",
+    "dogalortamda":"Doğal Ortamda Yetiştiricilik",
+    "dogalortamda1":"2300 m rakımda, doğal kaynak suyunda yetiştirilen ürünlerimiz; AB standartlarına uygundur, tazeliği ve kalitesiyle rekabetçi fiyatlar sunar.",
+    "herbalikta":"Her Balıkta Ustalık",
+    "herbalikta1":"İşlediğimiz her balık, deneyimli ve uzman ekibimizin titizliği, emeği ve kaliteye verdiği önemin somut bir yansımasıdır.",
+    "uzmankadro":"Uzman Kadro, Hijyenik İşlem",
+    "uzmankadro1":"Her bir balık, hijyen standartlarına uygun modern tesislerde, tam donanımlı uzman ekibimiz tarafından özenle işlenir ve paketlenir. Kaliteyi titizlikle buluşturuyoruz.",
+    "sertifikali":"Sertifikalı Üretim Güvencesi",
+    "sertifikali1":"Su ürünleri üretim, işleme ve ihracatında uzman firmamız; ISO 22000, HACCP, AB ve veterinerlik onaylıdır, yıllık kapasitemiz 10 milyon tondur.",
+    "musteridestek":"7/24 Müşteri Desteği",
+    "musteridestek1":"Haftanın her günü, günün her saati ulaşabileceğiniz destek ekibimizle her zaman yanınızdayız. Sorularınızı hızlı ve çözüm odaklı şekilde yanıtlıyoruz.",
+    "stokdepo":"Stok & Depo Yönetimi",
+    "stokdepo1":"Ürünleriniz modern, kontrollü ve hijyenik depolarda -18°C altında güvenle muhafaza edilir.",
+    "kafesyetistirici":"Modern Kafes Yetiştiriciliği",
+    "kafesyetistirici1":"2300 m rakımdaki doğal baraj gölümüzde, çevre dostu kafes sistemleriyle AB standartlarında, sağlıklı ve sürdürülebilir balık üretimi yapıyoruz.",
+    "videoizle":"Video İzle",
+    "referans":"REFERANSLARIMIZ",
+     "musterisoz":"Müşterimiz <span class=\"title-highlight\">Hakkımızda</span> Ne Söylüyor",
+     "musterisoz1":"Anatolia'yı ilk duyduğumda kalitesini tahmin etmiştim, ancak bu kadarını beklemiyordum",
+     "musterisoz2":"Sipariş ettiğim ürünler 10 gün içerisinde geldi ilk defa bu kadar memnun kaldım. Teşekkürler Anatolia!",
+     "kalitelihizmet":"kaliteli hizmet",
+     "yillikdeneyim":"yıllık deneyim",
+     "musterimemnuniyeti":"Müşteri Memnuniyeti",
+     "guleryuz":"Güler Yüz",
+     "footeryazisi":"Tüm kredi kartları, banka kartları ve havale ile ödeme kabul ediyoruz. Ayrıca kapıda nakit ödeme seçeneğimiz de mevcuttur.",
+    "biziarayabilirsiniz":"7/24 bizi arayabilirsiniz",
+    "copyrightsatiri": "<i class=\"fal fa-copyright\"></i> Copyright 2025 - <a href=\"index.html\">anatolia.com</a> Tüm hakları saklıdır."
+
+
+
+
+
+
   },
   "en": {
   "onyukleyici_iptal":"Cancel Preloader",
@@ -61,10 +100,48 @@
     "bizisecmeniz4":"We Offer Custom Packaging Options Upon Request.",
     "bizisecmeniz5":"We Provide Service with Affordable Prices and Guaranteed Regular Delivery.",
     "ofistelefon":"Our Office Phone",
-    "mobililetisim":"Mobile Contact"
+    "mobililetisim":"Mobile Contact",
+    "nedenbiz":"WHY US",
+    "prosedürlerimiz":"Our Procedures",
+    "prosedürlerimiz2":"Quality Procedures",
+    "ürünsaklama":"Product Storage and Shipment",
+    "ürünsaklama1":"Our products are prepared either frozen at -18°C or chilled at +0°C, delivered within 10 days, and shipped together with export documents and health certificates.",
+"kalitestandartlari":"Quality Standards",
+"kalitestandartlari1":"Our products are processed in EU-approved modern facilities, shipped in a cold chain at +0°C / -18°C, pass laboratory tests, and are delivered with veterinary health certificates.",
+"ihracatkalite":"Export Quality",
+"ihracatkalite1":"We produce trout and salmon in hygienic and modern facilities in accordance with EU standards, providing certified, sustainable, and export-ready services.",
+"dogalortamda":"Natural Environment Farming",
+"dogalortamda1":"Our products are raised at an altitude of 2300 meters in natural spring water; they comply with EU standards and offer competitive prices with their freshness and quality.",
+"herbalikta":"Mastery in Every Fish",
+"herbalikta1":"Every fish we process is a tangible reflection of our experienced and expert team’s care, effort, and commitment to quality.",
+"uzmankadro":"Expert Team, Hygienic Processing",
+"uzmankadro1":"Each fish is carefully processed and packaged by our fully equipped expert team in modern facilities that meet hygiene standards.We deliver quality with precision.",
+ "sertifikali":"Certified Production Assurance",
+ "sertifikali1":"Our expert company in seafood production, processing, and export is approved by ISO 22000, HACCP, EU, and veterinary authorities.Our annual capacity is 10 million tons.",
+"musteridestek":"7/24 Customer Support",
+"musteridestek1":"We are always by your side with our support team, available every day of the week, 24 hours a day.We respond to your questions quickly and with a solution-oriented approach.",
+ "stokdepo":" Stock & Warehouse Management",
+ "stokdepo1":"Your products are safely stored in modern, controlled, and hygienic warehouses at -18°C.",
+"kafesyetistirici":"Modern Cage Farming",
+"kafesyetistirici1":"At our natural dam lake located at 2300 meters altitude, we carry out healthy and sustainable fish farming in compliance with EU standards using eco-friendly cage systems.",
+"videoizle":"Watch Video",
+"referans":"OUR REFERENCES",
+ "musterisoz":"What Our Customers Say <span class=\"title-highlight\">About Us</span>",
+ "musterisoz1":"When I first heard of Anatolia, I had an idea of its quality, but I didn’t expect it to be this good.",
+ "musterisoz2":"The products I ordered arrived within 10 days. It’s the first time I’ve been this satisfied.Thank you, Anatolia!",
+"kalitelihizmet":"Quality Service",
+"yillikdeneyim":"Years of Experience",
+"musterimemnuniyeti":"Customer Satisfaction",
+"guleryuz":"Smiling Face",
+"footeryazisi":"We accept all credit cards, debit cards, and bank transfers. We also offer a cash-on-delivery payment option.",
+"biziarayabilirsiniz":"You Can Call Us 24/7",
+ "copyrightsatiri": "<i class=\"fal fa-copyright\"></i> Copyright 2025 - <a href=\"index.html\">anatolia.com</a> All rights reserved."
 
 
 
-  
+
+
+
+
   }
 }
