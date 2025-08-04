@@ -20,13 +20,15 @@
     "hizliteslim2":"Ürünlerinizi 10 gün içinde size teslim ediyoruz.",
     "derindondurucu":"Derin Dondurucu Sistemleri",
     "derindondurucu2":"Ürün kalitesini maksimumda tutan ileri teknoloji soğutma çözümleri. Dondurulmuş gıda için ideal koşullar.",
-    "türkiyenineniyi":"Türkiye'nin en iyi <span class=\\\"title-highlight\\\">Deniz Ürünleri</span> firmasıyız.",
+    "türkiyenineniyi":"Türkiye'nin en iyi <span class=\"title-highlight\">Deniz Ürünleri</span> firmasıyız.",
     "enuygunucret":"En uygun ücretlerle kaliteli hizmet ve işçilik analayışıyla yola çıkıyoruz.",
     "bizisecmeniz":"Bizi seçmenizin 4 nedeni",
     "bizisecmeniz2":"Tedarik sürecinin her aşaması şeffaf ve izlenebilir.",
     "bizisecmeniz3":"Onaylı çiftlikler ve denetimden geçmiş üretim tesisleriyle çalışıyoruz.",
     "bizisecmeniz4":"İsteğe özel ambalajlama seçenekleri sunuyoruz.",
-    "bizisecmeniz5":"Uygun fiyatlarla ve düzenli teslimat garantisiyle hizmet veriyoruz."
+    "bizisecmeniz5":"Uygun fiyatlarla ve düzenli teslimat garantisiyle hizmet veriyoruz.",
+    "ofistelefon":"Ofis Telefonumuz",
+    "mobililetisim":"Mobil İletişim"
     
     
   },
@@ -51,7 +53,16 @@
     "hizliteslim2":"We deliver your products within 10 days.",
     "derindondurucu":"Deep Freezer Systems",
     "derindondurucu2":"Advanced cooling solutions that maximize product quality. Ideal conditions for frozen food.",
-    "türkiyenineniyi":"We are the best <span class=\\\"title-highlight\\\">Seafood</span> company in Turkey."
+    "türkiyenineniyi":"We are the best <span class=\"title-highlight\">Seafood</span> company in Turkey.",
+    "enuygunucret":"We Set Out with the Understanding of Providing Quality Service and Labor at the Most Affordable Prices.",
+    "bizisecmeniz":"4 Reasons to Choose Us",
+    "bizisecmeniz2":"Every Stage of the Supply Process is Transparent and Traceable.",
+    "bizisecmeniz3":" We Work with Certified Farms and Inspected Production Facilities.",
+    "bizisecmeniz4":"We Offer Custom Packaging Options Upon Request.",
+    "bizisecmeniz5":"We Provide Service with Affordable Prices and Guaranteed Regular Delivery.",
+    "ofistelefon":"Our Office Phone",
+    "mobililetisim":"Mobile Contact"
+
 
 
   
