@@ -5,7 +5,28 @@
     "about":"Hakkımızda",
     "contact":"İletişim",
     "bizim":"Bizim",
-    "hakkimizda":"Hakkımızda"
+    "hakkimizda":"Hakkımızda",
+    "calismasaat":"Pazartesi - Cumartesi 8:00 - 21:00",
+    "takipedin":"Bizi takip edin",
+    "memnuniyet":"%100 Memnuniyet",
+    "herobaslik":"Anatolia <span class='vs-hero__title--highlight'>Kaliteli</span> Deniz Ürünleri",
+    "kalitemutlu":"Kalitemizle Hepinizi Mutlu Ediyoruz",
+    "bilgial":"Bilgi Al",
+    "dogalyetistirici":"Doğal Yetiştiricilik",
+    "dogalyetistirici2":"Doğal ortamda, etik koşullarda yetiştirilen balıklar.",
+    "denizvekara":"Deniz ve Kara Yoluyla Nakliye",
+    "denizvekara2":"Güvenli ve zamanında teslimat. Ürünlerinizi dünyanın her yerine soğuk zincir güvencesiyle ulaştırıyoruz.",
+    "hizliteslim":"Hızlı Teslimat",
+    "hizliteslim2":"Ürünlerinizi 10 gün içinde size teslim ediyoruz.",
+    "derindondurucu":"Derin Dondurucu Sistemleri",
+    "derindondurucu2":"Ürün kalitesini maksimumda tutan ileri teknoloji soğutma çözümleri. Dondurulmuş gıda için ideal koşullar.",
+    "türkiyenineniyi":"Türkiye'nin en iyi <span class=\\\"title-highlight\\\">Deniz Ürünleri</span> firmasıyız.",
+    "enuygunucret":"En uygun ücretlerle kaliteli hizmet ve işçilik analayışıyla yola çıkıyoruz.",
+    "bizisecmeniz":"Bizi seçmenizin 4 nedeni",
+    "bizisecmeniz2":"Tedarik sürecinin her aşaması şeffaf ve izlenebilir.",
+    "bizisecmeniz3":"Onaylı çiftlikler ve denetimden geçmiş üretim tesisleriyle çalışıyoruz.",
+    "bizisecmeniz4":"İsteğe özel ambalajlama seçenekleri sunuyoruz.",
+    "bizisecmeniz5":"Uygun fiyatlarla ve düzenli teslimat garantisiyle hizmet veriyoruz."
     
     
   },
@@ -15,8 +36,22 @@
   "about":"About",
   "contact":"Contact",
    "bizim":"About",
-   "hakkimizda":"Us"
-  
+   "hakkimizda":"Us",
+   "calismasaat":"Monday - Saturday 8:00 - 21:00",
+   "takipedin":"Follow Us",
+   "memnuniyet":"%100 Satisfaction",
+   "herobaslik":"Anatolia <span class=\"vs-hero__title--highlight\">Quality</span> Seafood",
+   "kalitemutlu":"We Make You Happy With Our Quaility",
+   "bilgial":"Get Info",
+   "dogalyetistirici":"Natural Farming",
+    "dogalyetistirici2":"Fish raised in natural environments under ethical conditions.",
+    "denizvekara":"Sea and Land Transportation",
+    "denizvekara2":"Safe and on-time delivery. We deliver your products worldwide with cold chain assurance.",
+    "hizliteslim":"Fast Delivery",
+    "hizliteslim2":"We deliver your products within 10 days.",
+    "derindondurucu":"Deep Freezer Systems",
+    "derindondurucu2":"Advanced cooling solutions that maximize product quality. Ideal conditions for frozen food.",
+    "türkiyenineniyi":"We are the best <span class=\\\"title-highlight\\\">Seafood</span> company in Turkey."
 
 
   
