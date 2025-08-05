@@ -64,7 +64,7 @@
 	Preloader
 	==============================-->
     <div class="preloader">
-        <button class="vs-btn preloaderCls">Önyükleyiciyi İptal Et </button>
+        <button class="vs-btn preloaderCls" data-i18n="onyukleyici_iptal">Önyükleyiciyi İptal Et </button>
         <div class="preloader-inner">
             <img src="assets/img/logo-white.png" style="width: 250px;" alt="logo">
             <span class="loader"></span>
@@ -86,19 +86,62 @@
             <div class="vs-mobile-menu">
                 <ul>
                     <li class="menu-item-has-children">
-                        <a href="index.html">Anasayfa</a>
+                        <a href="index.html" data-i18n="home">Anasayfa</a>
                     </li>
                     <li>
-                        <a href="hakkimizda.html">Hakkımızda</a>
+                        <a href="hakkimizda.html" data-i18n="about">Hakkımızda</a>
                     </li>
                     
                     <li>
-                        <a href="iletisim.html">İletişim</a>
+                        <a href="iletisim.html" data-i18n="contact">İletişim</a>
                     </li>
                 </ul>
-            </div>
+            <div class="mobile-language-selector">
+  <div id="Mobile-langBtn">🇹🇷 Türkçe</div>
+  <div id="Mobile-langDropdown" class="mobile-lang-dropdown">
+    <div onclick="setLanguage('tr')">🇹🇷 Türkçe</div>
+    <div onclick="setLanguage('en')">🇺🇸 English</div>
+    <div onclick="setLanguage('es')">🇪🇸 Español</div>
+    <div onclick="setLanguage('ru')">🇷🇺 Русский</div>
+    <div onclick="setLanguage('ar')">🇸🇦 عربي</div>
+    <div onclick="setLanguage('de')">🇩🇪 Deutsch</div>
+    <style>.mobile-language-selector {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#Mobile-langBtn {
+  cursor: pointer;
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.mobile-lang-dropdown {
+  display: none;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.mobile-lang-dropdown div {
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.mobile-lang-dropdown div:hover {
+  background-color: #f0f0f0;
+}
+</style>
         </div>
+      </div>
     </div>
+  </div>
+</div>
     <!--==============================
     Popup Search Box
     ============================== -->
@@ -121,14 +164,14 @@
                             <ul>
                                 <li><i class="far fa-envelope"></i><a
                                         href="mailto:info@haliyikatma.com">info@anatolia.com</a></li>
-                                <li class="d-lg-inline d-none"><i class="far fa-clock"></i>Pazartesi - Cumartesi 8:00 -
+                                <li class="d-lg-inline d-none" data-i18n="calismasaat"><i class="far fa-clock"></i>Pazartesi - Cumartesi 8:00 -
                                     21:00</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-auto">
                         <div class="social-style1">
-                            <span class="social-title">Bizi takip edin :</span>
+                            <span class="social-title" data-i18n="takipedin">Bizi takip edin :</span>
                             <div class="social-icon">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -155,14 +198,14 @@
                                 <nav class="main-menu menu-style2 d-none d-lg-block">
                                     <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="index.html">Anasayfa</a>
+                                            <a href="index.html" data-i18n="home">Anasayfa</a>
                                         </li>
                                         <li>
-                                            <a href="hakkimizda.html">Hakkımızda</a>
+                                            <a href="hakkimizda.html" data-i18n="about">Hakkımızda</a>
                                         </li>
                                        
                                         <li>
-                                            <a href="iletisim.html">İletişim</a>
+                                            <a href="iletisim.html" data-i18n="contact">İletişim</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -174,8 +217,19 @@
                             </div>
                             <div class="col-auto d-lg-block d-none">
                                 <div class="header-inner">
+                                    <div class="language-selector">
+  <div id="langBtn">🇹🇷 Türkçe</div>
+  <div id="langDropdown" class="lang-dropdown">
+    <div onclick="setLanguage('tr')">🇹🇷 Türkçe</div>
+    <div onclick="setLanguage('en')">🇺🇸 English</div>
+    <div onclick="setLanguage('es')">🇪🇸 Español</div>
+    <div onclick="setLanguage('ru')">🇷🇺 Русский</div>
+    <div onclick="setLanguage('ar')">🇸🇦 عربي</div>
+    <div onclick="setLanguage('de')">🇩🇪 Deutsch</div>
+  </div>
+</div>  
                                     <div class="header-icons">
-                                        <button class="searchBoxTggler"><i class="fal fa-search"></i></button>
+                                        
                                         <a class="icon-btn" href="https://wa.me/05456033448"><img src="assets/img/wp.png" alt="WhatsApp" style="width: 33px; height: 33px; margin-bottom: 16%; ">
                                             <span class="btn-text"
                                                 style="font-size: 25px; font-weight: bolder;"></i></a>
@@ -204,12 +258,12 @@
     <div class="breadcumb-wrapper " data-bg-src="assets/img/breadcumb/hero-bg-3.jpg">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title"><span>İletişim</span> Bilgilerimiz</h1>
+                <h1 class="breadcumb-title" data-i18n="iletisimbaslik"><span>İletişim</span> Bilgilerimiz</h1>
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Anasayfa</a></li>
-                    <li>iletisim</li>
+                    <li><a href="index.html" data-i18n="home">Anasayfa</a></li>
+                    <li data-i18n="contact">iletisim</li>
                 </ul>
             </div>
         </div>
@@ -502,6 +556,138 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
+
+
+
+<script>
+let translations = {};
+let currentLang = localStorage.getItem("lang") || "tr";
+
+// Dili ayarla ve tüm UI'ı güncelle
+function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem("lang", lang);
+  applyTranslations();
+
+  const labelMap = {
+    tr: "TR Türkçe",
+    en: "EN English",
+    es: "ES Español",
+    ru: "🇷🇺 Русский",
+    ar: "🇸🇦 عربي",
+    de: "🇩🇪 Deutsch"
+  };
+
+  const desktopBtn = document.getElementById("langBtn");
+  if (desktopBtn) desktopBtn.textContent = labelMap[lang];
+
+  const mobileBtn = document.getElementById("Mobile-langBtn");
+  if (mobileBtn) mobileBtn.textContent = labelMap[lang];
+
+  // Menüleri kapat
+  const desktopDropdown = document.getElementById("langDropdown");
+  if (desktopDropdown) desktopDropdown.classList.remove("show");
+
+  const mobileDropdown = document.getElementById("Mobile-langDropdown");
+  if (mobileDropdown) mobileDropdown.style.display = "none";
+}
+
+// HTML'deki tüm çeviri alanlarını uygula
+function applyTranslations() {
+  if (!translations[currentLang]) return;
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[currentLang][key]) {
+      el.innerHTML = translations[currentLang][key];
+    
+    }
+    
+  });
+}
+
+// Çeviri dosyasını yükle
+function initLanguage() {
+  fetch("./assets/lang/lang.json")
+    .then(res => res.json())
+    .then(data => {
+      translations = data;
+      applyTranslations();
+
+      const labelMap = {
+        tr: "TR Türkçe",
+        en: "EN English",
+        es: "ES Español",
+        ru: "🇷🇺 Русский",
+        ar: "🇸🇦 عربي",
+        de: "🇩🇪 Deutsch"
+      };
+
+      const desktopBtn = document.getElementById("langBtn");
+      if (desktopBtn) desktopBtn.textContent = labelMap[currentLang];
+
+      const mobileBtn = document.getElementById("Mobile-langBtn");
+      if (mobileBtn) mobileBtn.textContent = labelMap[currentLang];
+    });
+}
+
+// Olayları bağla
+document.addEventListener("DOMContentLoaded", () => {
+  initLanguage();
+
+  // Desktop dropdown toggle
+  const desktopBtn = document.getElementById("langBtn");
+  const desktopDropdown = document.getElementById("langDropdown");
+
+  if (desktopBtn && desktopDropdown) {
+    desktopBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      desktopDropdown.classList.toggle("show");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!desktopBtn.contains(e.target) && !desktopDropdown.contains(e.target)) {
+        desktopDropdown.classList.remove("show");
+      }
+    });
+  }
+
+  // Mobile dropdown toggle
+  const mobileBtn = document.getElementById("Mobile-langBtn");
+  const mobileDropdown = document.getElementById("Mobile-langDropdown");
+
+  if (mobileBtn && mobileDropdown) {
+    mobileBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      mobileDropdown.style.display =
+        mobileDropdown.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!mobileBtn.contains(e.target) && !mobileDropdown.contains(e.target)) {
+        mobileDropdown.style.display = "none";
+      }
+    });
+  }
+});
+let timeout;
+const observer = new MutationObserver(() => {
+  clearTimeout(timeout);
+  timeout = setTimeout(() => {
+    applyTranslations();
+  }, 100); // her DOM değişikliğinden sonra 100ms bekler
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
+
+</script>
+
+
+
+
+
+
+
+
 
 </body>
 

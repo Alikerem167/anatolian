@@ -64,7 +64,7 @@
 	Preloader
 	==============================-->
     <div class="preloader">
-        <button class="vs-btn preloaderCls">Önyükleyiciyi İptal Et </button>
+        <button class="vs-btn preloaderCls" data-i18n="onyukleyici_iptal">Önyükleyiciyi İptal Et </button>
         <div class="preloader-inner">
             <img src="assets/img/logo-white.png" style="width: 250px;" alt="logo">
             <span class="loader"></span>
@@ -83,19 +83,63 @@
             <div class="vs-mobile-menu">
                 <ul>
                     <li class="menu-item-has-children">
-                        <a href="index.html">Anasayfa</a>
+                        <a href="index.html" data-i18n="home">Anasayfa</a>
                     </li>
                     <li>
-                        <a href="hakkimizda.html">Hakkımızda</a>
+                        <a href="hakkimizda.html" data-i18n="about">Hakkımızda</a>
                     </li>
                     
                     <li>
-                        <a href="iletisim.html">İletişim</a>
+                        <a href="iletisim.html" data-i18n="contact">İletişim</a>
                     </li>
+                    
                 </ul>
-            </div>
+ <div class="mobile-language-selector">
+  <div id="Mobile-langBtn">🇹🇷 Türkçe</div>
+  <div id="Mobile-langDropdown" class="mobile-lang-dropdown">
+    <div onclick="setLanguage('tr')">🇹🇷 Türkçe</div>
+    <div onclick="setLanguage('en')">🇺🇸 English</div>
+    <div onclick="setLanguage('es')">🇪🇸 Español</div>
+    <div onclick="setLanguage('ru')">🇷🇺 Русский</div>
+    <div onclick="setLanguage('ar')">🇸🇦 عربي</div>
+    <div onclick="setLanguage('de')">🇩🇪 Deutsch</div>
+    <style>.mobile-language-selector {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#Mobile-langBtn {
+  cursor: pointer;
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.mobile-lang-dropdown {
+  display: none;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.mobile-lang-dropdown div {
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.mobile-lang-dropdown div:hover {
+  background-color: #f0f0f0;
+}
+</style>
         </div>
+      </div>
     </div>
+  </div>
+</div>
     <!--==============================
     Popup Search Box
     ============================== -->
@@ -118,14 +162,14 @@
                             <ul>
                                 <li><i class="far fa-envelope"></i><a
                                         href="mailto:info@haliyikatma.com">info@anatolia.com</a></li>
-                                <li class="d-lg-inline d-none"><i class="far fa-clock"></i>Pazartesi - Cumartesi 8:00 -
+                                <li class="d-lg-inline d-none" data-i18n="calismasaat"><i class="far fa-clock"></i>Pazartesi - Cumartesi 8:00 -
                                     21:00</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-auto">
                         <div class="social-style1">
-                            <span class="social-title">Bizi takip edin :</span>
+                            <span class="social-title" data-i18n="takipedin">Bizi takip edin :</span>
                             <div class="social-icon">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -248,28 +292,28 @@
                     <div class="about-content">
                         <div class="wow animate__fadeInUp" data-wow-delay="0.25s">
                             <div class="title-area title-anime animation-style2">
-                                <span class="sec-subtitle left-shape justify-content-center title-anime__title">NEDEN
+                                <span class="sec-subtitle left-shape justify-content-center title-anime__title" data-i18n="nedenbiz">NEDEN
                                     BİZ</span>
-                                <h2 class="sec-title title-anime__title">Türkiye'nin En İyi <span
+                                <h2 class="sec-title title-anime__title" data-i18n="turkiyenineniyi">Türkiye'nin En İyi <span
                                         class="title-highlight">Deniz Ürünleri</span> firmasıyız.</h2>
                             </div>
-                            <p class="about-text">
+                            <p class="about-text" data-i18n="enuygunucret">
                                 En uygun ücretlerle kaliteli hizmet ve işçilik analayışıyla yola çıkıyoruz.
                             </p>
                         </div>
 
                         <div class="tab-box">
                             <div class="tab-list">
-                                <h3 class="list-title">Bizi seçmenizin 4 nedeni</h3>
+                                <h3 class="list-title" data-i18n="bizisecmeniz">Bizi seçmenizin 4 nedeni</h3>
                                 <ul>
                                     <li class="list-item"><img src="assets/img/icon/right-mark-icon2.svg" alt="icon"
-                                            class="icon">Tedarik sürecinin her aşaması şeffaf ve izlenebilir.</li>
+                                            class="icon"><span data-i18n="bizisecmeniz2">Tedarik sürecinin her aşaması şeffaf ve izlenebilir.</span></li>
                                     <li class="list-item"><img src="assets/img/icon/right-mark-icon2.svg" alt="icon"
-                                            class="icon">Onaylı çiftlikler ve denetimden geçmiş üretim tesisleriyle çalışıyoruz.</li>
+                                            class="icon"><span data-i18n="bizisecmeniz3">Onaylı çiftlikler ve denetimden geçmiş üretim tesisleriyle çalışıyoruz.</span></li>
                                     <li class="list-item"><img src="assets/img/icon/right-mark-icon2.svg" alt="icon"
-                                            class="icon">İsteğe özel ambalajlama seçenekleri sunuyoruz.</li>
+                                            class="icon"><span data-i18n="bizisecmeniz4">İsteğe özel ambalajlama seçenekleri sunuyoruz.</span></li>
                                     <li class="list-item"><img src="assets/img/icon/right-mark-icon2.svg" alt="icon"
-                                            class="icon">Uygun fiyatlarla ve düzenli teslimat garantisiyle hizmet veriyoruz.</li>
+                                            class="icon"><span data-i18n="bizisecmeniz5">Uygun fiyatlarla ve düzenli teslimat garantisiyle hizmet veriyoruz.</span></li>
                                 </ul>
 
                             </div>
@@ -279,12 +323,12 @@
                         </div>
                         <div class="contact-box">
                             <div class="contact-content">
-                                <p class="contact-text">Ofis Telefonumuz</p>
+                                <p class="contact-text" data-i18n="ofistelefon">Ofis Telefonumuz</p>
                                 <h6 class="contact-title"><a href="tel:+905304768777">0530 476 87 77</a></h6>
                             </div>
                         </div>
                         <div class="about-inner mb-0 wow animate__fadeInUp" data-wow-delay="0.25s">
-                            <a class="vs-btn2" href="tel:+905426209991">Mobil İletişim <i
+                            <a class="vs-btn2" href="tel:+905426209991"><span data-i18n="mobililetisim">Mobil İletişim</span> <i
                                     class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
@@ -311,8 +355,8 @@
                         <div class="title-area text-center wow animate__fadeInUp title-anime animation-style2"
                             data-wow-delay="0.3s"
                             style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                            <h2 class="sec-title title-anime__title">En Güvenilir Hizmet</h2>
-                            <a class="vs-btn2" href="tel:+905426209991">Telefon ile bilgi alın <i
+                            <h2 class="sec-title title-anime__title" data-i18n="guvenilirhizmet">En Güvenilir Hizmet</h2>
+                            <a class="vs-btn2" href="tel:+905426209991"><span data-i18n="telefonlabilgi">Telefon ile bilgi alın</span> <i
                                     class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
@@ -332,7 +376,7 @@
         </div>
         <div class="container">
             <div class="row g-5">
-                <p class="vs-abuot__text">
+                <p class="vs-abuot__text" data-i18n="biografi">
                    TARİHÇE – KÖKLERİ DAĞLARDA, VİZYONU DÜNYADA
 Doğanın kalbinde, yüksek rakımlı serin vadilerde başlayan serüvenimiz, bugün uluslararası pazarlara ulaşan güçlü bir ihracat markasına dönüşmüştür. Temizliğiyle öne çıkan dağ kaynak sularının hayat verdiği tesislerimizde, doğaya ve canlıya saygılı bir üretim felsefesiyle çalışıyoruz.
 
@@ -371,7 +415,7 @@ Bugün geldiğimiz noktada, hem yerli hem de uluslararası pazarlarda güvenilir
                                 </div>
 
                                 <div class="social-style1">
-                                    <span class="social-title">Bizi takip et :</span>
+                                    <span class="social-title" data-i18n="takipedin">Bizi takip et :</span>
                                     <div class="social-icon">
                                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -383,7 +427,7 @@ Bugün geldiğimiz noktada, hem yerli hem de uluslararası pazarlarda güvenilir
                     </div>
                     <div class="col-xl-5 col-md-6 ">
                         <div class="widget widget_categories  footer-widget">
-                            <p class="footer-text">
+                            <p class="footer-text" data-i18n="footeryazisi">
                                 Tüm kredi kartları, banka kartları ve havale ile ödeme kabul ediyoruz. Ayrıca kapıda
                                 nakit ödeme seçeneğimiz de mevcuttur.
                             </p>
@@ -397,7 +441,7 @@ Bugün geldiğimiz noktada, hem yerli hem de uluslararası pazarlarda güvenilir
                                     <h6 class="contact-title"><a href="tel:+05456033448">0530 476 87 77</a></h6>
                                     <h6 class="contact-title"><a href="tel:+05319439334">0530 476 87 77</a></h6>
                                     <h6 class="contact-title"><a href="https://wa.me/05456033448">WHATSAPP</a></h6>
-                                    <p class="contact-text">7/24 bizi arayabilirsiniz</p>
+                                    <p class="contact-text" data-i18n="biziarayabilirsiniz">7/24 bizi arayabilirsiniz</p>
                                 </div>
                             </div>
                         </div>
@@ -413,7 +457,7 @@ Bugün geldiğimiz noktada, hem yerli hem de uluslararası pazarlarda güvenilir
             <div class="container">
                 <div class="row justify-content-xl-between justify-content-center align-items-center">
                     <div class="col-auto">
-                        <p class="copyright-text"><i class="fal fa-copyright"></i> Copyright 2025 - <a
+                        <p class="copyright-text" data-i18n="copyrightsatiri"><i class="fal fa-copyright"></i> Copyright 2025 - <a
                                 href="index.html">anatolia.com</a> Tüm hakları saklıdır.</p>
                     </div>
                     <div class="col-auto">
@@ -558,6 +602,7 @@ Bugün geldiğimiz noktada, hem yerli hem de uluslararası pazarlarda güvenilir
 let translations = {};
 let currentLang = localStorage.getItem("lang") || "tr";
 
+// Dili ayarla ve tüm UI'ı güncelle
 function setLanguage(lang) {
   currentLang = lang;
   localStorage.setItem("lang", lang);
@@ -571,24 +616,35 @@ function setLanguage(lang) {
     ar: "🇸🇦 عربي",
     de: "🇩🇪 Deutsch"
   };
-  const langBtn = document.getElementById("langBtn");
-  if (langBtn) langBtn.textContent = labelMap[lang];
 
-  // menüyü kapat
-  const dropdown = document.getElementById("langDropdown");
-  if (dropdown) dropdown.classList.remove("show");
+  const desktopBtn = document.getElementById("langBtn");
+  if (desktopBtn) desktopBtn.textContent = labelMap[lang];
+
+  const mobileBtn = document.getElementById("Mobile-langBtn");
+  if (mobileBtn) mobileBtn.textContent = labelMap[lang];
+
+  // Menüleri kapat
+  const desktopDropdown = document.getElementById("langDropdown");
+  if (desktopDropdown) desktopDropdown.classList.remove("show");
+
+  const mobileDropdown = document.getElementById("Mobile-langDropdown");
+  if (mobileDropdown) mobileDropdown.style.display = "none";
 }
 
+// HTML'deki tüm çeviri alanlarını uygula
 function applyTranslations() {
   if (!translations[currentLang]) return;
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     if (translations[currentLang][key]) {
-      el.textContent = translations[currentLang][key];
+      el.innerHTML = translations[currentLang][key];
+    
     }
+    
   });
 }
 
+// Çeviri dosyasını yükle
 function initLanguage() {
   fetch("./assets/lang/lang.json")
     .then(res => res.json())
@@ -596,40 +652,72 @@ function initLanguage() {
       translations = data;
       applyTranslations();
 
-      
-  const labelMap = {
-    tr: "TR Türkçe",
-    en: "EN English",
-    es: "ES Español",
-    ru: "🇷🇺 Русский",
-    ar: "🇸🇦 عربي",
-    de: "🇩🇪 Deutsch"
-}
-     
-      const langBtn = document.getElementById("langBtn");
-      if (langBtn) langBtn.textContent = labelMap[currentLang];
+      const labelMap = {
+        tr: "TR Türkçe",
+        en: "EN English",
+        es: "ES Español",
+        ru: "🇷🇺 Русский",
+        ar: "🇸🇦 عربي",
+        de: "🇩🇪 Deutsch"
+      };
+
+      const desktopBtn = document.getElementById("langBtn");
+      if (desktopBtn) desktopBtn.textContent = labelMap[currentLang];
+
+      const mobileBtn = document.getElementById("Mobile-langBtn");
+      if (mobileBtn) mobileBtn.textContent = labelMap[currentLang];
     });
 }
 
+// Olayları bağla
 document.addEventListener("DOMContentLoaded", () => {
   initLanguage();
 
-  const btn = document.getElementById("langBtn");
-  const dropdown = document.getElementById("langDropdown");
+  // Desktop dropdown toggle
+  const desktopBtn = document.getElementById("langBtn");
+  const desktopDropdown = document.getElementById("langDropdown");
 
-  if (btn && dropdown) {
-    btn.addEventListener("click", (e) => {
-      e.stopPropagation(); // tıklama dışarı taşmasın
-      dropdown.classList.toggle("show");
+  if (desktopBtn && desktopDropdown) {
+    desktopBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      desktopDropdown.classList.toggle("show");
     });
 
     document.addEventListener("click", (e) => {
-      if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
-        dropdown.classList.remove("show");
+      if (!desktopBtn.contains(e.target) && !desktopDropdown.contains(e.target)) {
+        desktopDropdown.classList.remove("show");
+      }
+    });
+  }
+
+  // Mobile dropdown toggle
+  const mobileBtn = document.getElementById("Mobile-langBtn");
+  const mobileDropdown = document.getElementById("Mobile-langDropdown");
+
+  if (mobileBtn && mobileDropdown) {
+    mobileBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      mobileDropdown.style.display =
+        mobileDropdown.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!mobileBtn.contains(e.target) && !mobileDropdown.contains(e.target)) {
+        mobileDropdown.style.display = "none";
       }
     });
   }
 });
+let timeout;
+const observer = new MutationObserver(() => {
+  clearTimeout(timeout);
+  timeout = setTimeout(() => {
+    applyTranslations();
+  }, 100); // her DOM değişikliğinden sonra 100ms bekler
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
+
 </script> 
 
 </body>
