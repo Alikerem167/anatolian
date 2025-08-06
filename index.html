@@ -1265,15 +1265,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-let timeout;
-const observer = new MutationObserver(() => {
-  clearTimeout(timeout);
-  timeout = setTimeout(() => {
-    applyTranslations();
-  }, 100); // her DOM değişikliğinden sonra 100ms bekler
-});
 
-observer.observe(document.body, { childList: true, subtree: true });
 
 </script>
 
