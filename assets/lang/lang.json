@@ -7,7 +7,7 @@
     "bizim":"Bizim",
     "hakkimizda":"Hakkımızda",
     "calismasaat":"Pazartesi - Cumartesi 8:00 - 21:00",
-    "takipedin":"Bizi takip edin",
+    "takipedin":"Bizi takip edin :",
     "memnuniyet":"%100 Memnuniyet",
     "herobaslik":"Anatolia <span class='vs-hero__title--highlight'>Kaliteli</span> Deniz Ürünleri",
     "kalitemutlu":"Kalitemizle Hepinizi Mutlu Ediyoruz",
@@ -67,7 +67,11 @@
     "guvenilirhizmet":"En Güvenilir Hizmet",
     "telefonlabilgi":"Telefon ile bilgi alın",
     "biografi":"TARİHÇE – KÖKLERİ DAĞLARDA, VİZYONU DÜNYADA Doğanın kalbinde, yüksek rakımlı serin vadilerde başlayan serüvenimiz, bugün uluslararası pazarlara ulaşan güçlü bir ihracat markasına dönüşmüştür. Temizliğiyle öne çıkan dağ kaynak sularının hayat verdiği tesislerimizde, doğaya ve canlıya saygılı bir üretim felsefesiyle çalışıyoruz. Kuruluşumuz 2012 yılında, geleneksel alabalık yetiştiriciliğini modern teknolojilerle buluşturarak fark yaratma hedefiyle yola çıktı. Tesislerimiz, deniz seviyesinden ortalama 1200–1500 metre yükseklikte, oksijen seviyesi yüksek ve su sıcaklığı yıl boyunca ideal seviyelerde seyreden bölgelerde konumlandırılmıştır. Bu özel koşullar, hem balıkların biyolojik gelişimi hem de et kalitesi açısından mükemmel sonuçlar sunmaktadır. Bugün geldiğimiz noktada, hem yerli hem de uluslararası pazarlarda güvenilir, sürdürülebilir ve yüksek kaliteli su ürünleri tedarikçisi olarak tanınıyoruz. Üretimimiz tamamen izlenebilir, gıda güvenliği ve çevre duyarlılığına dayalıdır. Avrupa Birliği normlarına uygun altyapımız, HACCP ve ISO 22000 kalite standartlarına entegre edilmiştir. İhracat ağımız başta Rusya ve Avrupa ülkeleri olmak üzere geniş bir coğrafyaya yayılmıştır. Her pazara uygun spesifik işleme, ambalajlama ve lojistik çözümleri sunarak müşterilerimize esneklik ve kaliteyi bir arada sağlıyoruz.",
-    "iletisimbaslik":"<span>İletişim</span> Bilgilerimiz"
+    "iletisimbaslik":"<span>İletişim</span> Bilgilerimiz",
+    "merkezofis":"Merkez Ofis",
+    "contactinfo":"İletişim Bilgilerimiz",
+    "anamerkezofis":"ANA MERKEZ OFİS",
+    "gonderbuton":"Gönder"
 
 
 
@@ -81,7 +85,7 @@
    "bizim":"About",
    "hakkimizda":"Us",
    "calismasaat":"Monday - Saturday 8:00 - 21:00",
-   "takipedin":"Follow Us",
+   "takipedin":"Follow Us :",
    "memnuniyet":"%100 Satısfaction",
    "herobaslik":"Anatolia <span class=\"vs-hero__title--highlight\">Quality</span> Seafood",
    "kalitemutlu":"We Make You Happy With Our Quaility",
@@ -131,21 +135,127 @@
  "musterisoz":"What Our Customers Say <span class=\"title-highlight\">About Us</span>",
  "musterisoz1":"When I first heard of Anatolia, I had an idea of its quality, but I didn’t expect it to be this good.",
  "musterisoz2":"The products I ordered arrived within 10 days. It’s the first time I’ve been this satisfied.Thank you, Anatolia!",
-"kalitelihizmet":"Quality Service",
-"yillikdeneyim":"Years of Experience",
-"musterimemnuniyeti":"Customer Satisfaction",
-"guleryuz":"Smiling Face",
+"kalitelihizmet":"Qualıty Servıce",
+"yillikdeneyim":"Years of Experıence",
+"musterimemnuniyeti":"Customer Satısfactıon",
+"guleryuz":"Smılıng Face",
 "footeryazisi":"We accept all credit cards, debit cards, and bank transfers. We also offer a cash-on-delivery payment option.",
 "biziarayabilirsiniz":"You Can Call Us 24/7",
  "copyrightsatiri": "<i class=\"fal fa-copyright\"></i> Copyright 2025 - <a href=\"index.html\">anatolia.com</a> All rights reserved.",
 "guvenilirhizmet":"The Most Reliable Service",
 "telefonlabilgi":"Call Us for Info",
 "biografi":"ABOUT US – ROOTED IN THE MOUNTAINS, VISION IN THE WORLDOur journey began in the heart of nature, in cool high-altitude valleys, and has evolved into a strong export brand reaching international markets.Operating in facilities nourished by pristine mountain spring waters, we follow a production philosophy that respects both nature and living beings.Founded in 2012, our company set out with the aim of blending traditional trout farming with modern technologies to make a difference.Our facilities are located in regions at an average altitude of 1200–1500 meters above sea level, where oxygen levels are high and water temperatures remain ideal throughout the year.These unique conditions provide excellent results in both the biological development of fish and meat quality.Today, we are recognized as a reliable, sustainable, and high-quality supplier of seafood products in both domestic and international markets.Our production is fully traceable and based on food safety and environmental responsibility.Our infrastructure complies with European Union regulations and is integrated with HACCP and ISO 22000 quality standards.Our export network spans a wide geography, primarily Russia and European countries.We offer market-specific processing, packaging, and logistics solutions, providing our customers with flexibility and quality together.",
-"iletisimbaslik":"<span>Contact</span> Info"
+"iletisimbaslik":"<span>Contact</span> Info",
+"merkezofis":"Head Office",
+    "contactinfo":"Contact Info",
+    "anamerkezofis":"Head Office Address",
+    "gonderbuton":"Send"
 
 
 
+
+
+  },
+  "es":{
+
+
+
+  "onyukleyici_iptal": "Cancelar precargador",
+  "home": "Inicio",
+  "about": "Sobre Nosotros",
+  "contact": "Contacto",
+  "bizim": "Nuestro",
+  "hakkimizda": "Sobre Nosotros",
+  "calismasaat": "Lunes - Sábado 8:00 - 21:00",
+  "takipedin": "Síguenos:",
+  "memnuniyet": "100% Satısfaccıón",
+  "herobaslik": "Anatolia <span class='vs-hero__title--highlight'>Productos del Mar</span> de Calidad",
+  "kalitemutlu": "Nuestra calidad hace feliz a todos",
+  "bilgial": "Solicitar Información",
+  "dogalyetistirici": "Cría Natural",
+  "dogalyetistirici2": "Peces criados en condiciones éticas y naturales.",
+  "denizvekara": "Transporte Marítimo y Terrestre",
+  "denizvekara2": "Entrega segura y puntual. Llevamos sus productos a todo el mundo con garantía de cadena de frío.",
+  "hizliteslim": "Entrega Rápida",
+  "hizliteslim2": "Entregamos sus productos en 10 días.",
+  "derindondurucu": "Sistemas de Congelación Profunda",
+  "derindondurucu2": "Soluciones de refrigeración avanzadas que mantienen la calidad al máximo. Condiciones ideales para alimentos congelados.",
+  "turkiyenineniyi": "Somos la mejor empresa de <span class=\"title-highlight\">Productos del Mar</span> de Turquía.",
+  "enuygunucret": "Ofrecemos servicios de calidad y mano de obra a precios asequibles.",
+  "bizisecmeniz": "4 razones para elegirnos",
+  "bizisecmeniz2": "Cada etapa del proceso de suministro es transparente y rastreable.",
+  "bizisecmeniz3": "Trabajamos con granjas certificadas e instalaciones de producción auditadas.",
+  "bizisecmeniz4": "Ofrecemos opciones de embalaje personalizado.",
+  "bizisecmeniz5": "Proporcionamos servicios con garantía de entrega regular y precios accesibles.",
+  "ofistelefon": "Teléfono de Oficina",
+  "mobililetisim": "Contacto Móvil",
+  "nedenbiz": "POR QUÉ NOSOTROS",
+  "prosedürlerimiz": "Nuestros Procedimientos",
+  "prosedürlerimiz2": "Procedimientos de Calidad",
+  "ürünsaklama": "Almacenamiento y Envío de Productos",
+  "ürünsaklama1": "Nuestros productos se preparan congelados a -18°C o refrigerados a +0°C, se entregan en 10 días y se envían con los documentos de exportación y certificados sanitarios.",
+  "kalitestandartlari": "Estándares de Calidad",
+  "kalitestandartlari1": "Nuestros productos se procesan en instalaciones modernas aprobadas por la UE, se envían con cadena de frío +0°C / -18°C, pasan pruebas de laboratorio y se entregan con certificados de salud veterinaria.",
+  "ihracatkalite": "Calidad de Exportación",
+  "ihracatkalite1": "Producimos trucha y salmón según los estándares de la UE en instalaciones higiénicas y modernas, con certificación, sostenibilidad y preparación para exportación.",
+  "dogalortamda": "Cría en Entorno Natural",
+  "dogalortamda1": "Nuestros productos criados a 2300 m de altitud en agua de manantial natural cumplen con los estándares de la UE y ofrecen frescura y calidad con precios competitivos.",
+  "herbalikta": "Maestría en Cada Pescado",
+  "herbalikta1": "Cada pez que procesamos es el reflejo tangible del cuidado, esfuerzo y compromiso con la calidad de nuestro equipo experimentado.",
+  "uzmankadro": "Equipo Experto, Proceso Higiénico",
+  "uzmankadro1": "Cada pez se procesa y empaca cuidadosamente en nuestras modernas instalaciones con estándares de higiene por nuestro equipo especializado totalmente equipado. Unimos calidad con precisión.",
+  "sertifikali": "Producción Certificada Garantizada",
+  "sertifikali1": "Nuestra empresa experta en producción, procesamiento y exportación de productos acuáticos está aprobada por ISO 22000, HACCP, la UE y veterinarios, con una capacidad anual de 10 millones de toneladas.",
+  "musteridestek": "Atención al Cliente 24/7",
+  "musteridestek1": "Estamos siempre disponibles con nuestro equipo de soporte 24/7. Respondemos sus preguntas de manera rápida y orientada a soluciones.",
+  "stokdepo": "Gestión de Almacén y Stock",
+  "stokdepo1": "Sus productos se almacenan de forma segura a -18°C en almacenes modernos, controlados e higiénicos.",
+  "kafesyetistirici": "Cría Moderna en Jaulas",
+  "kafesyetistirici1": "A 2300 m de altitud en nuestro lago artificial natural, producimos peces saludables y sostenibles según los estándares de la UE con sistemas de jaulas ecológicas.",
+  "videoizle": "Ver Video",
+  "referans": "NUESTRAS REFERENCIAS",
+  "musterisoz": "Qué Dice <span class=\"title-highlight\">Nuestro Cliente</span> Sobre Nosotros",
+  "musterisoz1": "Cuando escuché por primera vez sobre Anatolia, imaginé su calidad, pero no esperaba tanto.",
+  "musterisoz2": "Los productos que pedí llegaron en 10 días. ¡Es la primera vez que estoy tan satisfecho! ¡Gracias Anatolia!",
+  "kalitelihizmet": "servıcıo de calıdad",
+  "yillikdeneyim": "años de experıencıa",
+  "musterimemnuniyeti": "Satisfacción del Cliente",
+  "guleryuz": "Sonrısa Amable",
+  "footeryazisi": "Aceptamos pagos con todas las tarjetas de crédito, tarjetas bancarias y transferencias. También ofrecemos opción de pago en efectivo contra entrega.",
+  "biziarayabilirsiniz": "Puede llamarnos 24/7",
+  "copyrightsatiri": "<i class=\"fal fa-copyright\"></i> Copyright 2025 - <a href=\"index.html\">anatolia.com</a> Todos los derechos reservados.",
+  "guvenilirhizmet": "Servicio Más Confiable",
+  "telefonlabilgi": "Obtener Información por Teléfono",
+  "biografi": "HISTORIA – RAÍCES EN LAS MONTAÑAS, VISIÓN GLOBAL Nuestra aventura que comenzó en los frescos valles de gran altitud se ha transformado hoy en una poderosa marca de exportación que llega a los mercados internacionales. En nuestras instalaciones alimentadas por aguas cristalinas de manantial, trabajamos con una filosofía de producción respetuosa con la naturaleza y los seres vivos. Fundada en 2012, nuestra empresa comenzó con el objetivo de marcar la diferencia combinando la cría tradicional de truchas con tecnologías modernas. Nuestras instalaciones están situadas entre 1200 y 1500 metros sobre el nivel del mar, en regiones con alto nivel de oxígeno y temperaturas ideales durante todo el año. Estas condiciones especiales proporcionan resultados perfectos tanto para el desarrollo biológico de los peces como para la calidad de la carne. Hoy en día, somos reconocidos como un proveedor confiable, sostenible y de alta calidad en los mercados nacionales e internacionales. Nuestra producción es completamente rastreable y se basa en la seguridad alimentaria y la conciencia ambiental. Nuestra infraestructura compatible con las normas de la Unión Europea está integrada con los estándares de calidad HACCP e ISO 22000. Nuestra red de exportación se extiende por una amplia geografía, especialmente Rusia y países europeos. Ofrecemos soluciones de procesamiento, embalaje y logística específicas para cada mercado, brindando flexibilidad y calidad a nuestros clientes.",
+  "iletisimbaslik": "<span>Información de</span> Contacto",
+  "merkezofis": "Oficina Central",
+  "contactinfo": "Información de Contacto",
+  "anamerkezofis": "OFICINA CENTRAL PRINCIPAL",
+  "gonderbuton": "Enviar"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  },
+  "ru":{
 
 
   }
+
 }
