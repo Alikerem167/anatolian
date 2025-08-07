@@ -6440,7 +6440,7 @@ blockquote.vs-quote .quote-author {
   color: var(--white-color);
 }
 .service-style3 .service-content .service-title a:hover {
-  color: var(--white-color);
+  color: var(--theme-color);
 }
 .service-style3 .service-content .service-text {
   font-size: 15px;
@@ -6464,7 +6464,7 @@ blockquote.vs-quote .quote-author {
   transition: all 0.5s ease;
 }
 .service-style3:hover .service-content {
-  background-color: transparent;
+  background-color: var(--theme-color);
 }
 .service-style3:hover .service-bg1 {
   opacity: 1;

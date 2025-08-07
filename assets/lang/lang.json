@@ -71,7 +71,8 @@
     "merkezofis":"Merkez Ofis",
     "contactinfo":"İletişim Bilgilerimiz",
     "anamerkezofis":"ANA MERKEZ OFİS",
-    "gonderbuton":"Gönder"
+    "gonderbuton":"Gönder",
+    "isminiz":"isminiz"
 
 
 
@@ -149,7 +150,8 @@
 "merkezofis":"Head Office",
     "contactinfo":"Contact Info",
     "anamerkezofis":"Head Office Address",
-    "gonderbuton":"Send"
+    "gonderbuton":"Send",
+     "isminiz":"Name"
 
 
 
@@ -231,8 +233,8 @@
   "merkezofis": "Oficina Central",
   "contactinfo": "Información de Contacto",
   "anamerkezofis": "OFICINA CENTRAL PRINCIPAL",
-  "gonderbuton": "Enviar"
-
+  "gonderbuton": "Enviar",
+ "isminiz":"Su nombre"
 
 
 
@@ -326,8 +328,8 @@
   "merkezofis": "Главный офис",
   "contactinfo": "Контактная информация",
   "anamerkezofis": "ГЛАВНЫЙ ОФИС",
-  "gonderbuton": "Отправить"
-
+  "gonderbuton": "Отправить",
+ "isminiz":"Ваше имя"
 
   },
   "ar":{
@@ -406,7 +408,8 @@
   "merkezofis": "المكتب الرئيسي",
   "contactinfo": "معلومات الاتصال",
   "anamerkezofis": "المكتب الرئيسي",
-  "gonderbuton": "إرسال"
+  "gonderbuton": "إرسال",
+  "isminiz":"اسمك"
 
 
 
@@ -496,7 +499,8 @@
   "merkezofis": "Zentrale",
   "contactinfo": "Kontaktinformationen",
   "anamerkezofis": "HAUPTZENTRALE",
-  "gonderbuton": "Senden"
+  "gonderbuton": "Senden",
+  "isminiz":"Ihr Name"
 
 
 
