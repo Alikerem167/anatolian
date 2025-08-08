@@ -9558,3 +9558,54 @@ blockquote.vs-quote .quote-author {
     font-size: 16px;
   }
 }
+
+
+/* sadece mobilde göster */
+@media (max-width: 991px) {
+  .mobile-language-selector {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    margin-right: 10px;   /* hamburgerla araya mesafe */
+  }
+}
+@media (min-width: 992px) {
+  .mobile-language-selector { display: none; }
+}
+
+#Mobile-langBtn {
+  cursor: pointer;
+  background: #f5f5f5;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  line-height: 1;
+  user-select: none;
+}
+
+.mobile-lang-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  z-index: 9999;
+}
+.mobile-lang-dropdown div {
+  padding: 8px 4px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.mobile-lang-dropdown div:hover {
+  background: #f0f0f0;
+}
+@media (max-width: 991px){
+  #Mobile-langBtn{
+    font-size: clamp(12px, 3.2vw, 14px);
+  }
+}

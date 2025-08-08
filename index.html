@@ -1267,7 +1267,30 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
 </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const langSel = document.querySelector('.mobile-language-selector');
+  if (!langSel) return;
+
+  // Sayfadaki tüm toggle'ları al
+  const toggles = Array.from(document.querySelectorAll('.vs-menu-toggle'));
+
+  // Overlay (vs-menu-wrapper) içinde OLMAYAN toggle = header'daki hamburger
+  const headerToggle =
+    toggles.find(el => !el.closest('.vs-menu-wrapper'))   // öncelik: header
+    || toggles.find(el => el.offsetParent !== null)       // görünür olan
+    || toggles[0];
+
+  if (headerToggle) {
+    headerToggle.insertAdjacentElement('beforebegin', langSel);
+  }
+});
+</script>
+
+
 
 
 
