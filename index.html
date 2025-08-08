@@ -360,7 +360,7 @@
                     <div class="about-content">
                         <div class="wow animate__fadeInUp" data-wow-delay="0.25s">
                             <div class="title-area title-anime animation-style2">
-                                <span class="sec-subtitle left-shape justify-content-center title-anime__title" data-i18n="nedenbiz">NEDEN
+                                <span class="sec-subtitle left-shape justify-content-center title-anime__title" data-i18n="nedenbiz" data-i18n-html>NEDEN
                                     BİZ</span>
                                 <h2 class="sec-title title-anime__title" data-i18n="turkiyenineniyi">Türkiye'nin en iyi <span
                                         class="title-highlight">Deniz Ürünleri</span> firmasıyız.</h2>
@@ -776,7 +776,7 @@
                                 data-wow-delay="0.25s">
                                 <span
                                     class="sec-subtitle  left-shape justify-content-center title-anime__title" data-i18n="referans">REFERANSLARIMIZ</span>
-                                <h2 class="sec-title title-anime__title" data-i18n="musterisoz">Müşterimiz <span
+                                <h2 class="sec-title title-anime__title i18n-safe" data-i18n="musterisoz" data-i18n-html>Müşterimiz <span
                                         class="title-highlight">Hakkımızda</span> Ne Söylüyor</h2>
                             </div>
                             <div class="arraw-style1">
@@ -1288,11 +1288,33 @@ document.addEventListener('DOMContentLoaded', () => {
     headerToggle.insertAdjacentElement('beforebegin', langSel);
   }
 });
+
+
+
 </script>
 
 
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  if (typeof applyTranslations === 'function') {
+    // Sayfa yüklenince 20ms sonra çalıştır
+    setTimeout(applyTranslations, 20);
 
+    // Her animasyon başladığında tekrar çalıştır
+    document.body.addEventListener('animationstart', () => {
+      setTimeout(applyTranslations, 20);
+    });
+
+    // Her animasyon bittiğinde tekrar çalıştır
+    document.body.addEventListener('animationend', () => {
+      setTimeout(applyTranslations, 20);
+    });
+  }
+});
+
+
+</script>
 
 
  
