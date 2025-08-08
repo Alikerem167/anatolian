@@ -1313,6 +1313,49 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Mobile-safe: animasyon/transition sonrası çeviriyi tekrar uygula (Observer yok)
+document.addEventListener('DOMContentLoaded', function () {
+  if (typeof window.applyTranslations !== 'function') return;
+
+  let timer;
+  const schedule = (delay = 20) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => window.applyTranslations(), delay);
+  };
+
+  // Geç init olan kütüphaneler için birkaç erken "kick"
+  [0, 50, 150, 400].forEach(d => setTimeout(schedule, d));
+
+  // Event eklemeyi kısaltan helper
+  const on = (ev) => document.addEventListener(ev, () => schedule(20), { passive: true });
+
+  // CSS Animations (iOS için webkit prefix dahil)
+  [
+    'animationstart','animationend','animationiteration',
+    'webkitAnimationStart','webkitAnimationEnd','webkitAnimationIteration'
+  ].forEach(on);
+
+  // CSS Transitions (bazı temalar bunu kullanıyor)
+  [
+    'transitionstart','transitionend',
+    'webkitTransitionStart','webkitTransitionEnd'
+  ].forEach(on);
+
+  // Sayfa görünür olduğunda (bfcache vs.)
+  ['pageshow','visibilitychange'].forEach(ev =>
+    document.addEventListener(ev, () => schedule(20), { passive: true })
+  );
+
+  // Dili değiştirince de garantiye al
+  const _setLanguage = window.setLanguage;
+  if (typeof _setLanguage === 'function') {
+    window.setLanguage = function (lang) {
+      _setLanguage.call(this, lang);
+      schedule(20);
+    };
+  }
+});
+
 
 </script>
 
