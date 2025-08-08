@@ -72,7 +72,12 @@
     "contactinfo":"İletişim Bilgilerimiz",
     "anamerkezofis":"ANA MERKEZ OFİS",
     "gonderbuton":"Gönder",
-    "isminiz":"isminiz"
+    "isminiz":"isminiz *",
+    "telefon1":"Telefon",
+    "konu":"Konu *",
+    "telefonunuz":"Telefonunuz *",
+    "emailiniz":"Email *",
+    "mesajiniz":"Mesajınız ..."
 
 
 
@@ -151,7 +156,12 @@
     "contactinfo":"Contact Info",
     "anamerkezofis":"Head Office Address",
     "gonderbuton":"Send",
-     "isminiz":"Name"
+     "isminiz":"Your name *",
+     "telefon1":"Phone",
+     "konu":"Subject *",
+    "telefonunuz":"Your phone *",
+    "emailiniz":"Email *",
+    "mesajiniz":"Your message ..."
 
 
 
@@ -234,7 +244,12 @@
   "contactinfo": "Información de Contacto",
   "anamerkezofis": "OFICINA CENTRAL PRINCIPAL",
   "gonderbuton": "Enviar",
- "isminiz":"Su nombre"
+ "isminiz":"Su nombre *",
+ "telefon1":"teléfono",
+ "konu":"Asunto *",
+    "telefonunuz":"Su teléfono *",
+    "emailiniz":"Correo electrónico *",
+    "mesajiniz":"Su mensaje ..."
 
 
 
@@ -329,7 +344,12 @@
   "contactinfo": "Контактная информация",
   "anamerkezofis": "ГЛАВНЫЙ ОФИС",
   "gonderbuton": "Отправить",
- "isminiz":"Ваше имя"
+ "isminiz":"Ваше имя *",
+ "telefon1":"телефон",
+ "konu":"Тема *",
+    "telefonunuz":"Ваш телефон *",
+    "emailiniz":"Эл. почта *",
+    "mesajiniz":"Ваше сообщение ..."
 
   },
   "ar":{
@@ -409,7 +429,12 @@
   "contactinfo": "معلومات الاتصال",
   "anamerkezofis": "المكتب الرئيسي",
   "gonderbuton": "إرسال",
-  "isminiz":"اسمك"
+  "isminiz":"اسمك",
+  "telefon1":"هاتف",
+  "konu":"الموضوع",
+    "telefonunuz":"هاتفك",
+    "emailiniz":"البريد الإلكتروني",
+    "mesajiniz":"... رسالتك"
 
 
 
@@ -500,7 +525,12 @@
   "contactinfo": "Kontaktinformationen",
   "anamerkezofis": "HAUPTZENTRALE",
   "gonderbuton": "Senden",
-  "isminiz":"Ihr Name"
+  "isminiz":"Ihr Name *",
+  "telefon1":"Telefon",
+  "konu":"Betreff *",
+    "telefonunuz":"Ihre Telefonnummer *",
+    "emailiniz":"E-Mail *",
+    "mesajiniz":"Ihre Nachricht ..."
 
 
 

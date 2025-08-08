@@ -278,9 +278,9 @@
                     <div class="contact-style1">
                         <div class="title-area text-left  wow animate__fadeInUp animation-style2"
                             data-wow-delay="0.25s">
-                            <span class="sec-subtitle left-shape justify-content-center title-anime__title" data-i18n="merkezofis">Merkez
+                            <span class="sec-subtitle left-shape justify-content-center" data-i18n="merkezofis">Merkez
                                 Ofis</span>
-                            <h2 class="sec-title title-anime__title" data-i18n="contactinfo">İletişim bilgilerimiz</h2>
+                            <h2 class="sec-title" data-i18n="contactinfo">İletişim bilgilerimiz</h2>
                         </div>
                         <div class="contact-inner wow animate__fadeInUp" data-wow-delay="0.35s">
                             <div class="contact-address">
@@ -335,24 +335,24 @@
                                 <form action="https://haliyikatma.com/mail.php" method="post" class="ajax-contact">
                                     <div class="row gx-3">
                                         <div class="col-md-6 form-group">
-                                            <input name="name" type="text" class="form-control" placeholder= "İsminiz *"
+                                            <input name="name" type="text" class="form-control" placeholder= "İsminiz *" data-i18n-placeholder="isminiz"
                                                 required="">
                                         </div>
                                         <div class="col-md-6 form-group">
-                                            <input name="subject" type="text" class="form-control" placeholder="Konu *"
+                                            <input name="subject" type="text" class="form-control" placeholder="Konu *" data-i18n-placeholder="konu"
                                                 required="">
                                         </div>
 
                                         <div class="col-md-6 form-group">
                                             <input name="phone" type="number" class="form-control"
-                                                placeholder="Telefonunuz *" required="">
+                                                placeholder="Telefonunuz *" data-i18n-placeholder="telefonunuz" required="">
                                         </div>
                                         <div class="col-md-6 form-group">
-                                            <input name="email" type="email" class="form-control" placeholder="Email *"
+                                            <input name="email" type="email" class="form-control" placeholder="Email *" data-i18n-placeholder="emailiniz"
                                                 required="">
                                         </div>
                                         <div class="col-12  form-group mt-1 mb-30">
-                                            <textarea name="message" class="form-control" placeholder="Mesajınız ..."
+                                            <textarea name="message" class="form-control" placeholder="Mesajınız ..." data-i18n-placeholder="mesajiniz"
                                                 required=""></textarea>
                                         </div>
                                         <div class="col-12 form-group mb-0">
@@ -603,7 +603,14 @@ function applyTranslations() {
     }
     
   });
+   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    const val = translations[currentLang]?.[key];
+    if (val) el.setAttribute("placeholder", val.replace(/<[^>]*>/g, ''));
+  });
 }
+ 
+
 
 // Çeviri dosyasını yükle
 function initLanguage() {
@@ -667,6 +674,29 @@ document.addEventListener("DOMContentLoaded", () => {
         mobileDropdown.style.display = "none";
       }
     });
+  }
+});
+
+
+
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const langSel = document.querySelector('.mobile-language-selector');
+  if (!langSel) return;
+
+  // Sayfadaki tüm toggle'ları al
+  const toggles = Array.from(document.querySelectorAll('.vs-menu-toggle'));
+
+  // Overlay (vs-menu-wrapper) içinde OLMAYAN toggle = header'daki hamburger
+  const headerToggle =
+    toggles.find(el => !el.closest('.vs-menu-wrapper'))   // öncelik: header
+    || toggles.find(el => el.offsetParent !== null)       // görünür olan
+    || toggles[0];
+
+  if (headerToggle) {
+    headerToggle.insertAdjacentElement('beforebegin', langSel);
   }
 });
 

@@ -360,9 +360,9 @@
                     <div class="about-content">
                         <div class="wow animate__fadeInUp" data-wow-delay="0.25s">
                             <div class="title-area title-anime animation-style2">
-                                <span class="sec-subtitle left-shape justify-content-center title-anime__title" data-i18n="nedenbiz" data-i18n-html>NEDEN
+                                <span class="sec-subtitle left-shape justify-content-center" data-i18n="nedenbiz" data-i18n-html>NEDEN
                                     BİZ</span>
-                                <h2 class="sec-title title-anime__title" data-i18n="turkiyenineniyi">Türkiye'nin en iyi <span
+                                <h2 class="sec-title" data-i18n="turkiyenineniyi" data-i18n-html>Türkiye'nin en iyi <span
                                         class="title-highlight">Deniz Ürünleri</span> firmasıyız.</h2>
                             </div>
                             <p class="about-text" data-i18n="enuygunucret">
@@ -472,8 +472,8 @@
                 <div class="col-lg-6 col">
                     <div class="title-area text-left wow animate__fadeInUp title-anime animation-style5"
                         data-wow-delay="0.25s">
-                        <span class="sec-subtitle left-shape justify-content-center title-anime__title" data-i18n="prosedürlerimiz"> Prosedürlerimiz</span>
-                        <h2 class="sec-title title-anime__title text-white" data-i18n="prosedürlerimiz2">Kalite Prosedürlerimiz</h2>
+                        <span class="sec-subtitle left-shape justify-content-center" data-i18n="prosedürlerimiz"> Prosedürlerimiz</span>
+                        <h2 class="sec-title text-white" data-i18n="prosedürlerimiz2">Kalite Prosedürlerimiz</h2>
                     </div>
                 </div>
                 <div class="col-lg-6 col-auto">
@@ -775,8 +775,8 @@
                             <div class="title-area text-left wow animate__fadeInUp title-anime animation-style5"
                                 data-wow-delay="0.25s">
                                 <span
-                                    class="sec-subtitle  left-shape justify-content-center title-anime__title" data-i18n="referans">REFERANSLARIMIZ</span>
-                                <h2 class="sec-title title-anime__title i18n-safe" data-i18n="musterisoz" data-i18n-html>Müşterimiz <span
+                                    class="sec-subtitle  left-shape justify-content-center" data-i18n="referans">REFERANSLARIMIZ</span>
+                                <h2 class="sec-title i18n-safe" data-i18n="musterisoz" data-i18n-html>Müşterimiz <span
                                         class="title-highlight">Hakkımızda</span> Ne Söylüyor</h2>
                             </div>
                             <div class="arraw-style1">
@@ -1040,7 +1040,7 @@
         <button id="phoneBtn" aria-label="Telefon" class="cfbutton">
             <i class="fa fa-phone"></i>
             <span class="btn-text"
-                style="position: absolute; left: -85px; top: 50%; transform: translateY(-50%) translateX(-20px); white-space: nowrap; opacity: 0; transition: opacity 0.5s, transform 0.5s; font-size: large; font-weight: 500;">telefon</span>
+                style="position: absolute; left: -85px; top: 50%; transform: translateY(-50%) translateX(-20px); white-space: nowrap; opacity: 0; transition: opacity 0.5s, transform 0.5s; font-size: large; font-weight: 500;" data-i18n="telefon1">telefon</span>
         </button>
         <button class="back-to-top" id="backToTop" aria-label="Back to Top" style="position: relative;">
             <span class="progress-circle">
@@ -1295,69 +1295,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-  if (typeof applyTranslations === 'function') {
-    // Sayfa yüklenince 20ms sonra çalıştır
-    setTimeout(applyTranslations, 20);
 
-    // Her animasyon başladığında tekrar çalıştır
-    document.body.addEventListener('animationstart', () => {
-      setTimeout(applyTranslations, 20);
-    });
-
-    // Her animasyon bittiğinde tekrar çalıştır
-    document.body.addEventListener('animationend', () => {
-      setTimeout(applyTranslations, 20);
-    });
-  }
-});
-
-// Mobile-safe: animasyon/transition sonrası çeviriyi tekrar uygula (Observer yok)
-document.addEventListener('DOMContentLoaded', function () {
-  if (typeof window.applyTranslations !== 'function') return;
-
-  let timer;
-  const schedule = (delay = 20) => {
-    clearTimeout(timer);
-    timer = setTimeout(() => window.applyTranslations(), delay);
-  };
-
-  // Geç init olan kütüphaneler için birkaç erken "kick"
-  [0, 50, 150, 400].forEach(d => setTimeout(schedule, d));
-
-  // Event eklemeyi kısaltan helper
-  const on = (ev) => document.addEventListener(ev, () => schedule(20), { passive: true });
-
-  // CSS Animations (iOS için webkit prefix dahil)
-  [
-    'animationstart','animationend','animationiteration',
-    'webkitAnimationStart','webkitAnimationEnd','webkitAnimationIteration'
-  ].forEach(on);
-
-  // CSS Transitions (bazı temalar bunu kullanıyor)
-  [
-    'transitionstart','transitionend',
-    'webkitTransitionStart','webkitTransitionEnd'
-  ].forEach(on);
-
-  // Sayfa görünür olduğunda (bfcache vs.)
-  ['pageshow','visibilitychange'].forEach(ev =>
-    document.addEventListener(ev, () => schedule(20), { passive: true })
-  );
-
-  // Dili değiştirince de garantiye al
-  const _setLanguage = window.setLanguage;
-  if (typeof _setLanguage === 'function') {
-    window.setLanguage = function (lang) {
-      _setLanguage.call(this, lang);
-      schedule(20);
-    };
-  }
-});
-
-
-</script>
 
 
  

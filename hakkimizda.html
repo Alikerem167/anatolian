@@ -292,9 +292,9 @@
                     <div class="about-content">
                         <div class="wow animate__fadeInUp" data-wow-delay="0.25s">
                             <div class="title-area title-anime animation-style2">
-                                <span class="sec-subtitle left-shape justify-content-center title-anime__title" data-i18n="nedenbiz">NEDEN
+                                <span class="sec-subtitle left-shape justify-content-center" data-i18n="nedenbiz">NEDEN
                                     BİZ</span>
-                                <h2 class="sec-title title-anime__title" data-i18n="turkiyenineniyi">Türkiye'nin En İyi <span
+                                <h2 class="sec-title" data-i18n="turkiyenineniyi">Türkiye'nin En İyi <span
                                         class="title-highlight">Deniz Ürünleri</span> firmasıyız.</h2>
                             </div>
                             <p class="about-text" data-i18n="enuygunucret">
@@ -355,7 +355,7 @@
                         <div class="title-area text-center wow animate__fadeInUp title-anime animation-style2"
                             data-wow-delay="0.3s"
                             style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                            <h2 class="sec-title title-anime__title" data-i18n="guvenilirhizmet">En Güvenilir Hizmet</h2>
+                            <h2 class="sec-title" data-i18n="guvenilirhizmet">En Güvenilir Hizmet</h2>
                             <a class="vs-btn2" href="tel:+905426209991"><span data-i18n="telefonlabilgi">Telefon ile bilgi alın</span> <i
                                     class="far fa-long-arrow-right"></i></a>
                         </div>
@@ -710,7 +710,31 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-</script> 
+
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const langSel = document.querySelector('.mobile-language-selector');
+  if (!langSel) return;
+
+  // Sayfadaki tüm toggle'ları al
+  const toggles = Array.from(document.querySelectorAll('.vs-menu-toggle'));
+
+  // Overlay (vs-menu-wrapper) içinde OLMAYAN toggle = header'daki hamburger
+  const headerToggle =
+    toggles.find(el => !el.closest('.vs-menu-wrapper'))   // öncelik: header
+    || toggles.find(el => el.offsetParent !== null)       // görünür olan
+    || toggles[0];
+
+  if (headerToggle) {
+    headerToggle.insertAdjacentElement('beforebegin', langSel);
+  }
+});
+
+
+
+</script>
 
 </body>
 
