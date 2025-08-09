@@ -77,7 +77,8 @@
     "konu":"Konu *",
     "telefonunuz":"Telefonunuz *",
     "emailiniz":"Email *",
-    "mesajiniz":"Mesajınız ..."
+    "mesajiniz":"Mesajınız ...",
+    "whatsapphattimiz":"Whatsapp hattımız"
 
 
 
@@ -161,7 +162,8 @@
      "konu":"Subject *",
     "telefonunuz":"Your phone *",
     "emailiniz":"Email *",
-    "mesajiniz":"Your message ..."
+    "mesajiniz":"Your message ...",
+    "whatsapphattimiz":"Whatsapp line"
 
 
 
@@ -249,7 +251,8 @@
  "konu":"Asunto *",
     "telefonunuz":"Su teléfono *",
     "emailiniz":"Correo electrónico *",
-    "mesajiniz":"Su mensaje ..."
+    "mesajiniz":"Su mensaje ...",
+    "whatsapphattimiz":"Línea de Whatsapp"
 
 
 
@@ -349,7 +352,8 @@
  "konu":"Тема *",
     "telefonunuz":"Ваш телефон *",
     "emailiniz":"Эл. почта *",
-    "mesajiniz":"Ваше сообщение ..."
+    "mesajiniz":"Ваше сообщение ...",
+    "whatsapphattimiz":"Линия Whatsapp"
 
   },
   "ar":{
@@ -434,7 +438,8 @@
   "konu":"الموضوع",
     "telefonunuz":"هاتفك",
     "emailiniz":"البريد الإلكتروني",
-    "mesajiniz":"... رسالتك"
+    "mesajiniz":"... رسالتك",
+    "whatsapphattimiz":"خط Whatsapp"
 
 
 
@@ -530,7 +535,8 @@
   "konu":"Betreff *",
     "telefonunuz":"Ihre Telefonnummer *",
     "emailiniz":"E-Mail *",
-    "mesajiniz":"Ihre Nachricht ..."
+    "mesajiniz":"Ihre Nachricht ...",
+    "whatsapphattimiz":"Whatsapp-Leitung"
 
 
 
